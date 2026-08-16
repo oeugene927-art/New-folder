@@ -1,0 +1,20 @@
+{
+  "name": "grad-hive-market",
+  "version": "1.0.0",
+  "description": "Full-stack marketplace for graduates and small sellers",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "marketplace",
+    "express",
+    "fullstack",
+    "seller"
+  ],
+  "author": "AI Assistant",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

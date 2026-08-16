@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GradHive Market</title>
+    <meta
+      name="description"
+      content="A marketplace where graduates and other sellers list second-hand goods and essentials."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <div class="brand">
+          <span class="brand-mark">G</span>
+          <span>GradHive Market</span>
+        </div>
+        <nav class="main-nav">
+          <a href="#browse">Browse</a>
+          <a href="#sell">Sell</a>
+          <a href="#about">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="pill">Student-approved marketplace</span>
+            <h1>Sell smarter. Buy value. Build momentum.</h1>
+            <p>
+              A trusted local platform for graduates, students, and small sellers to
+              list second-hand items, essentials, and useful finds.
+            </p>
+            <div class="hero-actions">
+              <a href="#browse" class="btn btn-primary">Browse listings</a>
+              <a href="#sell" class="btn btn-light">Sell an item</a>
+            </div>
+            <div class="stats">
+              <div>
+                <strong>3.4k+</strong>
+                <span>active listings</span>
+              </div>
+              <div>
+                <strong>1.2k+</strong>
+                <span>graduates selling</span>
+              </div>
+              <div>
+                <strong>96%</strong>
+                <span>happy buyers</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-panel">
+            <div class="panel-card">
+              <div class="card-top">
+                <span class="status-dot"></span>
+                <span>live marketplace</span>
+              </div>
+              <h3>Featured item</h3>
+              <div class="product-highlight">
+                <div class="product-thumb"></div>
+                <div class="product-info">
+                  <p class="mini-label">Second-hand laptop</p>
+                  <h4>Ksh 29,500</h4>
+                  <span>12 months old • excellent condition</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="browse">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Available now</p>
+              <h2>Fresh listings</h2>
+            </div>
+            <div class="filter-wrap">
+              <label for="categoryFilter">Filter by category</label>
+              <select id="categoryFilter">
+                <option value="all">All categories</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Furniture">Furniture</option>
+                <option value="Fashion">Fashion</option>
+                <option value="Books">Books</option>
+                <option value="Home">Home</option>
+                <option value="Services">Services</option>
+              </select>
+            </div>
+          </div>
+
+          <div id="item-list" class="item-grid"></div>
+        </div>
+      </section>
+
+      <section class="section dark-section" id="sell">
+        <div class="container form-grid">
+          <div class="sell-copy">
+            <p class="eyebrow">List and earn</p>
+            <h2>Sell your item in minutes</h2>
+            <p>
+              If you are a graduate, student, or local seller, add your product or
+              service and reach buyers quickly.
+            </p>
+            <ul>
+              <li>Simple listing form</li>
+              <li>Trusted buyer communication</li>
+              <li>Quick local visibility</li>
+            </ul>
+          </div>
+
+          <form id="listing-form" class="listing-form">
+            <div class="field-row">
+              <div>
+                <label for="title">Item title</label>
+                <input id="title" name="title" type="text" placeholder="e.g. Samsung laptop" required />
+              </div>
+              <div>
+                <label for="price">Price (Ksh)</label>
+                <input id="price" name="price" type="number" min="1" placeholder="25000" required />
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div>
+                <label for="category">Category</label>
+                <select id="category" name="category" required>
+                  <option value="">Select category</option>
+                  <option value="Electronics">Electronics</option>
+                  <option value="Furniture">Furniture</option>
+                  <option value="Fashion">Fashion</option>
+                  <option value="Books">Books</option>
+                  <option value="Home">Home</option>
+                  <option value="Services">Services</option>
+                </select>
+              </div>
+              <div>
+                <label for="condition">Condition</label>
+                <select id="condition" name="condition">
+                  <option value="Excellent">Excellent</option>
+                  <option value="Good">Good</option>
+                  <option value="Fair">Fair</option>
+                  <option value="Like New">Like New</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="seller">Seller name</label>
+              <input id="seller" name="seller" type="text" placeholder="Your name" required />
+            </div>
+
+            <div>
+              <label for="phone">Phone number</label>
+              <input id="phone" name="phone" type="tel" placeholder="0712345678" />
+            </div>
+
+            <div>
+              <label for="description">Description</label>
+              <textarea id="description" name="description" rows="4" placeholder="Tell buyers about the item" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary wide">List item</button>
+            <p id="form-message" class="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container about-box">
+          <div>
+            <p class="eyebrow">Why GradHive</p>
+            <h2>Made for local deals and second-hand value</h2>
+          </div>
+          <p>
+            GradHive helps graduates and everyday sellers turn unused possessions into
+            real value while giving buyers affordable, practical options nearby.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-row">
+        <span>© <span id="year"></span> GradHive Market</span>
+        <span>Buy. Sell. Repeat.</span>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

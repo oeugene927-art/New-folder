@@ -1,0 +1,35 @@
+[
+  {
+    "id": "1",
+    "title": "Used laptop",
+    "description": "Good for school and office work, battery still strong.",
+    "price": 28500,
+    "category": "Electronics",
+    "seller": "Mary W.",
+    "phone": "0712345678",
+    "condition": "Good",
+    "createdAt": "2026-08-15T09:00:00.000Z"
+  },
+  {
+    "id": "2",
+    "title": "Office desk",
+    "description": "Sturdy wooden desk, ideal for home study setup.",
+    "price": 12000,
+    "category": "Furniture",
+    "seller": "John K.",
+    "phone": "0723456789",
+    "condition": "Excellent",
+    "createdAt": "2026-08-15T09:30:00.000Z"
+  },
+  {
+    "id": "3",
+    "title": "Business books bundle",
+    "description": "A mix of entrepreneurship and accounting books for students and graduates.",
+    "price": 4500,
+    "category": "Books",
+    "seller": "Aisha N.",
+    "phone": "0734567890",
+    "condition": "Like New",
+    "createdAt": "2026-08-15T10:00:00.000Z"
+  }
+]
